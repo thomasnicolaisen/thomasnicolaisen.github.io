@@ -1,0 +1,21 @@
+
+header{ background-color: black;
+  font-size: 25px;
+  color: white;
+  font-family: 'Fredoka'cursive;
+  font-size: 50px;
+
+  }
+  link{
+    transition: 1s;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+body{
+  background-color: black;
+}
+footer{
+  background-color: black;
+}

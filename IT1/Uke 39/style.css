@@ -1,0 +1,32 @@
+body{
+  margin-left: 0;
+  margin-right: 0;
+}
+header{
+  background-color:red;
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+img{
+  width:700px;
+  transition: 1s;
+}
+body{
+  background-color:white;
+}
+
+footer{
+  font-size: 40px;
+  background-color:grey;
+}
+
+input:focus{
+  width: 200px;
+}
+
+input:hover{
+  width: 350px;

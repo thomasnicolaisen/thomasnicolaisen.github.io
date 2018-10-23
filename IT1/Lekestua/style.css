@@ -1,0 +1,23 @@
+
+header {
+  background-color: #191970;
+  font-family: 'Righteous', cursive;
+  font-size: 15px;
+  color: white;
+}
+
+h1 {
+color: red;
+text-align: center;
+}
+
+body {
+  background-color: white;
+  font-family: 'Righteous', cursive;
+}
+main {
+  text-align: center;
+}
+li a {
+  
+}
