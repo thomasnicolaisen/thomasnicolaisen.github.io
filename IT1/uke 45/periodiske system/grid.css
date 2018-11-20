@@ -1,0 +1,90 @@
+
+body{
+  background-color: lightgreen;
+}
+
+
+.hovedgrunn {
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-gap: 5px; /* Gir en margin på 5 pixler rundt hver grid; */
+}
+
+.actgrunn {
+display: grid;
+grid-template-columns: repeat(18,1fr);
+grid-gap: 5px; /* Gir en margin på 5 pixler rundt hver grid; */
+margin-top: 7px;
+margin-left: 60px;
+}
+.grunnstoff{
+  background-color: #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grunnstoff:hover{
+  background-color: grey;
+}
+.grunnstoff{
+  border-radius: 5%;
+}
+ .lanthagrunn {
+   display: grid;
+   grid-template-columns: repeat(18,1fr);
+   grid-gap: 5px; /* Gir en margin på 5 pixler rundt hver grid; */
+   margin-top: 50px;
+   margin-left: 60px;
+ }
+
+ .lanthanider {
+   border-radius: 5%;
+ }
+
+ .lanthanider:hover {
+   background-color: blue;
+ }
+
+
+
+.lanthanider {
+  background-color: lightblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.actinider {
+  background-color: lightyellow;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.actinider:hover {
+  background-color: yellow;
+}
+
+.actinider {
+  border-radius: 5%;
+}
+
+.navn {
+  text-align: center;
+}
+
+.tall {
+  text-align: center;
+}
+
+.col-span-16{
+  grid-column: span 16;
+}
+.usynelig{
+  opacity: 0;
+}
+.col-span-10{
+  grid-column: span 10;
+}
+.col-span-10{
+  grid-column: span 10;
+}

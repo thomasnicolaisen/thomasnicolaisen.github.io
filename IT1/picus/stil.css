@@ -52,14 +52,8 @@ main {
       width: 58%;
         margin: auto;
           color: black;
+            font-family: 'Roboto Mono', monospace;
 }
 body{
   background-color: #fcc9e4;
-}
-
-footer {
-  background-color: white;
-  width: 58%;
-  margin: auto;
-  color: black
 }

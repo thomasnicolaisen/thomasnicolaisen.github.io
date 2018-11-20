@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+header{
+  margin: auto;
+  display: inline-flex;
+  background-color: #1d1e2b;
+  width: 100%;
+  font-size: 2vw;
+  line-height: 10px;
+}
+
+li {
+  display: inline;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  line-height: 45px;
+}
+
+a img {
+  width: 15vw;
+}
