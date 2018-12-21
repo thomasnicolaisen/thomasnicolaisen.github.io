@@ -1,0 +1,233 @@
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  display: grid;
+  width: 60%;
+  margin: auto;
+}
+
+main {
+  display: grid;
+  width: 60%;
+  margin: auto;
+  background-color: #eaeaea;
+}
+
+footer{
+  margin:auto;
+  width: 60%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.homeMain{
+  width: 80%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  grid-gap: 1vw;
+}
+
+.bigIMGdiv{
+  grid-column: span 2;
+  transition: 0.6s;
+  background-size: cover;
+  background-position: center;
+  padding-top: 12vw;
+  padding-bottom: 12vw;
+  text-decoration: none;
+}
+
+.bigIMGdiv:hover{
+  transform: scale(1.01);
+  transition: 0.6s;
+}
+
+.smallIMGdiv:hover{
+  transform: scale(1.01);
+  transition: 0.6s;
+  grid-gap: 1vw;
+}
+
+.bigIMGdiv > a img{
+  border: 0.1vw solid #FF0000;
+}
+
+.bigIMG{
+  width: 100%;
+}
+
+.smallIMGdiv{
+  grid-column: span 1;
+  transition: 0.6s;
+  background-size: cover;
+  background-position: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  text-decoration: none;
+}
+
+.smallIMG{
+  width: 100%;
+}
+
+.navRow{
+  display: grid;
+  grid-row: 2;
+}
+
+.nav-topRow{
+  margin: auto;
+  margin-bottom: 1vw;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  line-height: 4vw;
+  background-color: #FF0000;
+  transition: 0.8s;
+  font-size: 1.4vw;
+}
+
+.menuButtons{
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.menuButtons:hover{
+  color: #232323;
+  transition: 0.5s;
+}
+
+.HomeImgText{
+  text-decoration: none;
+  color: black;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.HomeImgLink{
+  text-decoration: none;
+}
+
+.HomeImg{
+  width: 100%;
+}
+
+.HomeImgText{
+  font-size: 3vw;
+}
+
+.BGimg-en{
+  background-image: url(https://www.lovethisitem.com/wp-content/uploads/2016/12/he-man-christmas-shirt.jpg);
+}
+
+.BGimg-to{
+  background-image: url(https://kiwipong.co.nz/wp-content/uploads/2013/09/redcups.jpg);
+}
+
+.BGimg-tre{
+
+}
+
+#home {
+  grid-column: 2;
+}
+
+#logo {
+  text-align: center;
+  background-color: #ce0606;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.merchIMG{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: span 4;
+  grid-row: 2;
+  grid-gap: 0.5vw;
+}
+
+.merchIMG2{
+  width: 110%;
+  grid-gap: 0.5vw;
+}
+
+.shopMain{
+  width: 80%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  grid-gap: 1vw;
+}
+
+.merchTitle{
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.merchIMG{
+  width: 100%;
+}
+
+.shopIMG{
+  text-decoration: none;
+  width: 90%;
+  color: Black;
+}
+
+.whMain-T{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+  margin: 2vw;
+}
+
+.whMain-B{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  margin: 1vW;
+}
+
+.altDiv{
+  width: 100%;
+  padding-bottom: 25vw;
+}
+
+
+.buyBtn{
+  text-decoration: none;
+  color: white;
+  background-color: #ce0606;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.checked{
+  color: orange;
+}
+
+.insta{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+
+}

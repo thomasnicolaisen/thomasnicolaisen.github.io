@@ -15,6 +15,14 @@ main {
   background-color: #eaeaea;
 }
 
+footer{
+  margin:auto;
+  width: 60%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
 .homeMain{
   width: 80%;
   text-align: center;
@@ -76,6 +84,11 @@ main {
   grid-row: 2;
 }
 
+.nav-topRow{
+  margin: auto;
+  margin-bottom: 1vw;
+}
+
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -135,4 +148,86 @@ main {
   text-align: center;
   background-color: #ce0606;
   font-family: 'Archivo Black', sans-serif;
+}
+
+.merchIMG{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: span 4;
+  grid-row: 2;
+  grid-gap: 0.5vw;
+}
+
+.merchIMG2{
+  width: 110%;
+  grid-gap: 0.5vw;
+}
+
+.shopMain{
+  width: 80%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  grid-gap: 1vw;
+}
+
+.merchTitle{
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.merchIMG{
+  width: 100%;
+}
+
+.shopIMG{
+  text-decoration: none;
+  width: 90%;
+  color: Black;
+}
+
+.whMain-T{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+  margin: 2vw;
+}
+
+.whMain-B{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  margin: 1vW;
+}
+
+.altDiv{
+  width: 100%;
+  padding-bottom: 25vw;
+}
+
+
+.buyBtn{
+  text-decoration: none;
+  color: white;
+  background-color: #ce0606;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.checked{
+  color: orange;
+}
+
+.insta{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+
 }

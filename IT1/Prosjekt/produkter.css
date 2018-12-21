@@ -1,0 +1,78 @@
+.BGimg-alt-wh{
+  background-image: url("https://cdn.shopify.com/s/files/1/0734/4303/products/prod_8932c3a9-3b89-4776-9881-3c80dc23ff78.jpg?v=1477137631");
+  background-position: center;
+  background-size: cover;
+}
+
+.BGimg-alt-jolli{
+  background-image: url("https://d1w8c6s6gmwlek.cloudfront.net/beeskneestees.com/products/586/896/5868964.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.BGimg-alt-wmha{
+background-image: url("https://cdn.shopify.com/s/files/1/0879/6804/products/Where_my_hos_at-Long_sleeve-white.jpg?v=1449784117");
+background-position: center;
+background-size: cover;
+}
+
+.BGimg-alt-fortnite{
+  background-image: url("https://img-5.fruugo.com/product/9/49/55311499_max.jpg");
+  background-position: center;
+  background-size:
+}
+
+.BGimg-alt-stool{
+  background-image: url("https://images-mm.s3.amazonaws.com/Shotgun_Keychain_Orange2_POP.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.BGimg-alt-bong{
+  background-image: url("https://www.teknikmagasinet.no/storage/ma/c825dac198994e0c81cc169945474441/52f589492d554071b00d9f90a83a6144/342-350-0-png.Png/4C4779AD1C8188420145498C64D6D53FDEAF39B0/102146.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.BGimg-alt-dblbong{
+  background-image: url("http://www.myfullhouse.co.uk/wp-content/uploads/2017/03/double-header-beer-bong.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.BGimg-alt-rlttable{
+  background-image: url("https://www.teknikmagasinet.no/storage/ma/688abd8db6fd4a88b04957c7e110a403/8e6580fd4f2a482da4b13e5f60ad2ea1/240-184-0-png.Png/64F52940E420B6A0246F0EF9CCC73B1181CBC58E/660654.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.BGimg-alt-
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: red;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
