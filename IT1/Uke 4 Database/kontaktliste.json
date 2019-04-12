@@ -1,0 +1,19 @@
+{
+  "kontakter":{
+    "1":{
+      "firstName":"Thomas",
+      "lastName":"Nicolaisen",
+      "telephone":99887766,
+      "adress":"Gislebakken 8, 6789 Asker",
+      "elsker":["Trening", "Damer"]
+
+    },
+    "2":{
+      "firstName":"Christian",
+      "lastName":"Rapp",
+      "telephone":55443322,
+      "adress":"Galla 8, 6789 Asker",
+      "elsker":["Sjokolade","Iskrem","Katter"]
+      }
+    }
+  }

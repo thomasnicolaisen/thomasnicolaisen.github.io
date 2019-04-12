@@ -1,0 +1,280 @@
+{
+    "sko": {
+      "Nike": {
+        "Ph001": {
+          "Navn": "Nike Phantom Venom Black",
+          "Type": "Gress",
+          "Pris": 1800,
+          "ImageURL":"../Bilder/NikePhantom SB.jpg",
+          "Farge1": "Svart",
+          "Farge2": ""
+        },
+        "Ph002": {
+          "Navn": "Nike Phantom Fully Charged",
+          "Type": "KunstG",
+          "Pris": 2300,
+          "ImageURL":"../Bilder/NikePhantom BLÅ.jpg",
+          "Farge1": "Blå",
+          "Farge2": ""
+        },
+        "Ph003": {
+          "Navn": "Nike Phantom DF Game Over",
+          "Type": "Gress",
+          "Pris": 1800,
+          "ImageURL":"../Bilder/NikeRØD.jpg",
+          "Farge1": "Rød",
+          "Farge2": ""
+        },
+        "Mc001": {
+          "Navn": "Nike Mercurial Vapor 12",
+          "Type": "Futsal",
+          "Pris": 2000,
+          "ImageURL":"../Bilder/NikeNJR RH.jpg",
+          "Farge1": "Rød",
+          "Farge2": "Hvit"
+        },
+        "Mc002": {
+          "Navn": "Nike Mercurial Superfly",
+          "Type": "KunstG",
+          "Pris": 2000,
+          "ImageURL":"../Bilder/NikeMrc Svart.jpg",
+          "Farge1": "Svart",
+          "Farge2": ""
+        },
+        "Hy001": {
+          "Navn": "Nike Hypervenom Neon",
+          "Type": "Gress",
+          "Pris": 1800,
+          "ImageURL":"../Bilder/NikeHp NEON.jpg",
+          "Farge1": "Hvit",
+          "Farge2": "Grønn"
+        },
+        "Hy002": {
+          "Navn": "Nike Hypervenom 3 Elite",
+          "Type": "KunstG",
+          "Pris": 1500,
+          "ImageURL":"../Bilder/NikeHypervenom 3BLÅ.jpg",
+          "Farge1": "Svart",
+          "Farge2": "Blå"
+        },
+        "Ma001": {
+          "Navn": "Nike Magista ObaX",
+          "Type": "Futsal",
+          "Pris": 1200,
+          "ImageURL":"../Bilder/NikeObrax HR.jpg",
+          "Farge1": "Hvit",
+          "Farge2": "Rød"
+        }
+      },
+      "Adidas": {
+        "Pr001": {
+          "Navn": "Adidas Predator DB",
+          "Type": "Gress",
+          "Pris": 3400,
+          "ImageURL":"../Bilder/Adidas DB.jpg",
+          "Farge1": "Hvit",
+          "Farge2": "Rød"
+        },
+        "Pr002": {
+          "Navn": "Adidas Predator 19",
+          "Type": "Gress",
+          "Pris": 1900,
+          "ImageURL":"../Bilder/AdidasPr Blå.jpg",
+          "Farge1": "Blå",
+          "Farge2": ""
+        },
+        "Ne001": {
+          "Navn": "Adidas Nemeziz 18",
+          "Type": "KunstG",
+          "Pris": 1600,
+          "ImageURL":"https://thumblr.uniid.it/product/179288/f1aefd65df50.jpg",
+          "Farge1": "Gul",
+          "Farge2": "Grønn"
+        },
+        "Ne002": {
+          "Navn": "Adidas Nemeziz Blood",
+          "Type": "KunstG",
+          "Pris": 1400,
+          "ImageURL":"../Bilder/AdidasNemz Rød.jpg",
+          "Farge1": "Rød",
+          "Farge2": ""
+        },
+        "Co001": {
+          "Navn": "Adidas Copa 19",
+          "Type": "KunstG",
+          "Pris": 1300,
+          "ImageURL":"../Bilder/AdidasCopa.jpg",
+          "Farge1": "Hvit",
+          "Farge2": "Rød"
+        }
+      },
+      "Puma":{
+        "Fu001": {
+          "Navn": "Puma Future Red",
+          "Type": "KunstG",
+          "Pris": 2600,
+          "ImageURL":"../Bilder/PumaRød.jpg",
+          "Farge1": "Rød",
+          "Farge2": "Blå"
+        },
+        "Fu002": {
+          "Navn": "Puma Future Hack",
+          "Type": "KunstG",
+          "Pris": 2600,
+          "ImageURL":"../Bilder/PumaHacked.jpg",
+          "Farge1": "Svart",
+          "Farge2": "Grønn"
+        },
+        "On001": {
+          "Navn": "Puma ONE",
+          "Type": "Gress",
+          "Pris": 2300,
+          "ImageURL":"../Bilder/PumaONE.jpg",
+          "Farge1": "Bronse",
+          "Farge2": "Svart"
+        },
+        "Ki001": {
+          "Navn": "Puma King",
+          "Type": "Gress",
+          "Pris": 1600,
+          "ImageURL":"../Bilder/PumaKing.jpg",
+          "Farge1": "Svart",
+          "Farge2": "Hvit"
+        }
+      }
+    },
+    "drakter": {
+      "Eng": {
+        "MCITY":{
+          "Navn":"Manchester City",
+          "Merke": "Nike",
+          "Farge1": "Blå",
+          "Farge2": "",
+          "Pris": 1000,
+          "ImageURL": "https://thumblr.uniid.it/product/172218/d51db9d43922.jpg"
+        },
+        "MUTD":{
+          "Navn":"Manchester United",
+          "Merke": "Adidas",
+          "Farge1": "Rød",
+          "Farge2": "",
+          "Pris": 700,
+          "ImageURL": "https://thumblr.uniid.it/product/173717/21d2c61e34e4.jpg"
+        },
+        "CHE":{
+          "Navn":"Chelsea",
+          "Merke": "Nike",
+          "Farge1": "Blå",
+          "Farge2": "",
+          "Pris": 700,
+          "ImageURL": "https://thumblr.uniid.it/product/172227/8ae853fafc85.jpg"
+        }
+      },
+      "Spa":{
+        "RMA":{
+          "Navn":"Real Madrid",
+          "Merke": "Adidas",
+          "Farge1": "Hvit",
+          "Farge2": "",
+          "Pris": 800,
+          "ImageURL": "https://thumblr.uniid.it/product/173738/ff0a4f171d6b.jpg"
+        },
+        "BAR":{
+          "Navn":"Barcelona",
+          "Merke": "Nike",
+          "Farge1": "Blå",
+          "Farge2": "Rød",
+          "Pris": 900,
+          "ImageURL": "https://thumblr.uniid.it/product/172462/76e751f38ff3.jpg"
+        },
+        "ATLM":{
+          "Navn":"Atletico Madrid",
+          "Merke": "Nike",
+          "Farge1": "Rød",
+          "Farge2": "Hvit",
+          "Pris": 800,
+          "ImageURL": "https://thumblr.uniid.it/product/172298/4e53ffccd392.jpg"
+        }
+      },
+      "Ita":{
+        "JUV":{
+          "Navn":"Juventus",
+          "Merke": "Adidas",
+          "Farge1": "Svart",
+          "Farge2": "Hvit",
+          "Pris": 900,
+          "ImageURL": "https://thumblr.uniid.it/product/173651/f85da9fffab3.jpg"
+        },
+        "INTR":{
+          "Navn": "Inter",
+          "Merke": "Nike",
+          "Farge1": "Svart",
+          "Farge2": "Blå",
+          "Pris": 800,
+          "ImageURL": "https://thumblr.uniid.it/product/172286/affe386df05a.jpg"
+        }
+      },
+      "Fra":{
+        "PSG":{
+          "Navn": "PSG",
+          "Merke": "Nike",
+          "Farge1": "Blå",
+          "Farge2": "Rød",
+          "Pris": 1000,
+          "ImageURL": "https://thumblr.uniid.it/product/172261/d55d2cdc87f7.jpg"
+        }
+      },
+      "Tys":{
+        "DRTMN":{
+          "Navn": "Dortmund",
+          "Merke": "Puma",
+          "Farge1": "Gul",
+          "Farge2": "Svart",
+          "Pris": 800,
+          "ImageURL": "https://thumblr.uniid.it/product/175071/c294d054b69f.jpg"
+        },
+        "BYRN":{
+          "Navn":"Bayern",
+          "Merke": "Adidas",
+          "Farge1": "Rød",
+          "Farge2": "",
+          "Pris": 900,
+          "ImageURL": "https://thumblr.uniid.it/product/173681/dd33af6ccb30.jpg"
+        }
+      }
+    },
+    "fotballer":{
+        "Nike":{
+          "n001":{
+            "Navn": "Nike PL",
+            "Farge1": "Gul",
+            "Farge2": "Rød",
+            "Pris": 1200,
+            "ImageURL": "https://thumblr.uniid.it/product/177887/67e26f9a1d5f.jpg"
+          },
+          "n002":{
+            "Navn": "Nike LaLiga",
+            "Farge1": "Gul",
+            "Farge2": "Rød",
+            "Pris": 1300,
+            "ImageURL": "https://thumblr.uniid.it/product/176036/19f1de7a500a.jpg"
+          }
+        },
+        "Adidas":{
+            "a001":{
+            "Navn": "UEFA NL",
+            "Farge1": "Gul",
+            "Farge2": "Rød",
+            "Pris": 1100,
+            "ImageURL": "https://thumblr.uniid.it/product/173848/255a904dc4d7.jpg"
+          },
+            "a002":{
+            "Navn": "Adidas MLS",
+            "Farge1": "Gul",
+            "Farge2": "Rød",
+            "Pris": 1400,
+            "ImageURL": "https://thumblr.uniid.it/product/179513/8f4e108c905e.jpg"
+          }
+      }
+    }
+  }

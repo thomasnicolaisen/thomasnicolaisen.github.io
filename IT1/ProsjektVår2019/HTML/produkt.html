@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Produkt</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAy82LiYfYpN2Ata3eheo_riY-tX5vqI9s",
+        authDomain: "prosjektvaar.firebaseapp.com",
+        databaseURL: "https://prosjektvaar.firebaseio.com",
+        projectId: "prosjektvaar",
+        storageBucket: "prosjektvaar.appspot.com",
+        messagingSenderId: "162414983908"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+
+    <main id="produkter">
+
+    </main>
+
+      <script type="text/javascript">
+
+        //Referanser til HTML-elementer
+
+
+        //Kode som henter ut info fra url
+        let url_string = window.location.href;
+        let url = new URL (url_string);
+        let id = url.searchParams.get("id");
+
+        console.log (id);
+
+        //Referanse til databasen
+        const db = firebase.database();
+        const produkt = db.ref("produkt");
+        const valgtProdukt = db.ref("sko/"+id)
+
+        //setup
+        visValgtProdukt();
+
+        //Funkjsonsdefinisjoner
+        function visValgtProdukt(){
+          produkter.innerHTML =``;
+          valgtProdukt.on("value", genererHTML);
+          valgtNikeSko.on("value", genererHTML);
+          valgtAdidasSko.on("value", genererHTML);
+          valgtPumaSko.on("value", genererHTML);
+          valgtEngDrakter.on("value", genererHTML);
+          valgtItaDrakter.on("value", genererHTML);
+          valgtFraDrakter.on("value", genererHTML);
+          valgtTysDrakter.on("value", genererHTML);
+          valgtSpaDrakter.on("value", genererHTML);
+          valgtNikeDrakter.on("value", genererHTML);
+          valgtAdidasDrakter.on("value", genererHTML);
+          valgtPumaDrakter.on("value", genererHTML);
+          valgtNikeBaller.on("value", genererHTML);
+          valgtAdidasBaller.on("value", genererHTML);
+        }
+
+        function genererHTML(snapshot){
+          let key = snapshot.key;
+          let objekt = snapshot.val();
+
+          console.log(key,objekt);
+
+          main.innerHTML += `
+            <section class="valgtProdukt">
+            <h1>${objekt.Name}</h1>
+            <img src="${objekt.ImageURL}"></img>
+            <p>Navn: ${objekt.Navn}</p>
+            <p>Merke: ${objekt.Merke}</p>
+            <p>Farge1: ${objekt.Farge1}</p>
+            <p>Farge2: ${objekt.Farge2}</p>
+            <p>Pris: ${objekt.Pris}</p>
+            </section>
+          `;
+        }
+
+      </script>
+
+    <script src="../JavaScript/main.js"></script>
+  </body>
+</html>

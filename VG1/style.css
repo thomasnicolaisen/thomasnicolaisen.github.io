@@ -1,0 +1,6 @@
+body{
+  background-color: rgb(204, 251, 196); /*Dette bestemmer fargen man skal ha i bakgrunnen*/
+  margin-left: 100px;
+  margin-right: 100px;
+  margin: auto;
+}

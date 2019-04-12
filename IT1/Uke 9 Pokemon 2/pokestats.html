@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <script type="text/javascript">
+        //Kode som henter ut info fra url
+        let url_string = window.location.href;
+        let url = new URL (url_string);
+        let id = url.searchParams.get("id");
+
+        console.log (id);
+
+        //Referanse til databasen
+        const db = firebase.database();
+        const pokemon = db.ref("pokemon");
+        const valgtPokemon = db.ref("pokemon/"+id)
+
+        //Funkjsonsdefinisjoner
+        function visValgtPokemon(){
+          main.innerHTML =``;
+          valgtPokemon.on("child_added",genererHTML);
+        }
+
+      </script>
+    </main>
+
+  </body>
+</html>

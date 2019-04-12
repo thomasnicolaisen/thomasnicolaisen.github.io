@@ -1,0 +1,502 @@
+body{
+ margin: 0;
+ overflow-x: hidden;
+
+}
+header{
+  display: grid;
+  width: 100%;
+  margin:auto;
+  text-align: center;
+  grid-template-columns: 8% repeat(5, 1fr) 2fr 2.5%;
+  background-color: rgb(49, 200, 11);
+  line-height: 5vw;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+}
+
+main{
+  display: grid;
+  width: 100%;
+  margin: auto;
+  background: white;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 70%;
+
+}
+
+footer{
+  margin:auto;
+  width: 100%;
+  background-color: rgb(49, 200, 11);
+  color: white;
+  text-align: center;
+  bottom: 0;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.navBtn{
+  text-decoration: none;
+  background-color: rgb(49, 200, 11);
+  text-align: center;
+  border: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100%;
+  color: white;
+  outline: none;
+}
+.navBtn:hover:before, .navBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+.navBtn:hover{
+  background:#fff;
+  color:rgb(49, 200, 11);
+}
+
+
+.Logo{
+  background-image: url("../Bilder/LOGO.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2.4vw;
+}
+
+.searchInputfield{
+  width: auto;
+  padding-left: .5vw;
+  padding-right: .5vw;
+  font-size: 1vw;
+  border: .05vw solid #414141;
+  border-right: white;
+  outline: none;
+}
+
+.dropdown-icon{
+  background-image: url("https://www.materialui.co/materialIcons/navigation/arrow_drop_down_white_192x192.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navSearch{
+  display: grid;
+  grid-template-columns: 90% 10%;
+  height: 2.5vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.searchBtn{
+  background-color: white;
+  border: .05vw solid #414141;
+  border-left: white;
+  outline: none;
+}
+.searchBtn:hover{
+  cursor: pointer;
+}
+.SideBarBtn{
+  display: grid;
+  border: none;
+  background-color: white;
+  font-family: 'Fjalla One', sans-serif;
+  margin: auto;
+  width: 100%;
+}
+
+.searchBtnLogo{
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMnB4IiBoZWlnaHQ9IjIycHgiIHZpZXdCb3g9IjAgMCAyMiAyMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTE5LjggMTguNGwtNC44LTQuOGMwLjItMC4yIDAuMi0wLjMgMC4zLTAuNCAwLjEtMC4xIDAuMS0wLjEgMC4xLTAuMiAxLjktMi43IDEuNC02LjQtMS04LjkgLTEuMy0xLjQtMy4xLTIuMS01LjEtMi4xIC0xLjkgMC0zLjggMC43LTUuMiAyLjEgLTEuNCAxLjQtMi4yIDMuMy0yLjIgNS4xIDAgMiAwLjcgMy44IDIuMiA1LjEgMS4zIDEuNCAzLjIgMi4xIDUuMiAyLjEgMS4yIDAgMi4zLTAuMyAzLjQtMC44IDAuMi0wLjEgMC40LTAuMyAwLjctMC41bDQuOSA0LjdjMCAwIDAuMiAwLjEgMC40IDAuMSAwLjEgMCAwLjIgMCAwLjQtMC4xbDAuMi0wLjIgMC41LTAuNWMwLjItMC4yIDAuMS0wLjYtMC4xLTAuN1pNOS4zIDRjMi45IDAgNS4zIDIuNCA1LjMgNS4zIDAgMi45LTIuNCA1LjMtNS4zIDUuMyAtMi45IDAtNS4zLTIuNC01LjMtNS4zIDAtMi45IDIuNC01LjMgNS4zLTUuM1oiIGZpbGw9IiMwYWJmNWEiLz48L3N2Zz4=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1vw;
+  margin: auto;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-gap: 1vw;
+  background-color: #eaeaea;
+}
+
+#sideBar{
+  background-color: rgb(49, 200, 11);
+  color: white;
+  overflow-y: auto;
+}
+
+#farger{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+#produkter{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  margin-top: 1vw;
+}
+#produkter img{
+  width: 100%;
+}
+
+
+ .SideBarBtn:hover{
+   background:#fff;
+   color:rgb(18, 26, 214);
+ }
+
+.produktBox{
+  background-color: white;
+  text-decoration: none;
+  color:black;
+}
+
+.produktPris{
+  font-size: 1.6vw;
+  color: rgb(49, 200, 11);
+}
+
+.SideBarBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.fargeKnapp{
+  grid-column: span 1;
+}
+.SideBarBtn:hover{
+  background:#fff;
+  color:rgb(49, 200, 11);
+}
+.SideBarBtn:before,.SideBarBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(49, 200, 11);
+  transition:400ms ease all;
+}
+.SideBarBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.SideBarBtn:hover:before,.SideBarBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.BlåBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Fjalla One', sans-serif;
+}
+.BlåBtn:hover{
+  background:#fff;
+  color:rgb(18, 68, 221);
+}
+.BlåBtn:hover{
+  background:#fff;
+  color:rgb(18, 68, 221);
+}
+.BlåBtn:before,.BlåBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(18, 68, 221);
+  transition:400ms ease all;
+}
+.BlåBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.BlåBtn:hover:before,.BlåBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.RødBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Fjalla One', sans-serif;
+}
+.RødBtn:hover{
+  background:#fff;
+  color:rgb(227, 12, 12);
+}
+.RødBtn:hover{
+  background:#fff;
+  color:rgb(227, 12, 12);
+}
+.RødBtn:before,.RødBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(227, 12, 12);
+  transition:400ms ease all;
+}
+.RødBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.RødBtn:hover:before,.RødBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.HvitBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Fjalla One', sans-serif;
+}
+.HvitBtn:hover{
+  background:#fff;
+  color:rgb(227, 12, 12);
+}
+.HvitBtn:hover{
+  background:#fff;
+  color:rgb(49, 200, 11);
+}
+.HvitBtn:before,.HvitBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+.HvitBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.HvitBtn:hover:before,.HvitBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.SvartBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Fjalla One', sans-serif;
+}
+.SvartBtn:hover{
+  background:#fff;
+  color: black;
+}
+.SvartBtn:hover{
+  background:#fff;
+  color: black;
+}
+.SvartBtn:before,.SvartBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: black;
+  transition:400ms ease all;
+}
+.SvartBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.SvartBtn:hover:before,.SvartBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.GulBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Fjalla One', sans-serif;
+}
+.GulBtn:hover{
+  background:#fff;
+  color: yellow;
+}
+.GulBtn:hover{
+  background:#fff;
+  color: yellow;
+}
+.GulBtn:before,.GulBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: yellow;
+  transition:400ms ease all;
+}
+.GulBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.GulBtn:hover:before,.GulBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.GråBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Fjalla One', sans-serif;
+}
+.GråBtn:hover{
+  background:#fff;
+  color: grey;
+}
+.GråBtn:hover{
+  background:#fff;
+  color: grey;
+}
+.GråBtn:before,.GråBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: grey;
+  transition:400ms ease all;
+}
+.GråBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.GråBtn:hover:before,.GråBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.BronseBtn{
+  background:white;
+  color:rgb(49, 200, 11);
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Fjalla One', sans-serif;
+}
+.BronseBtn:hover{
+  background:#fff;
+  color: rgb(205,127,50);
+}
+.BronseBtn:hover{
+  background:#fff;
+  color: rgb(205,127,50);
+}
+.BronseBtn:before,.BronseBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(205,127,50);
+  transition:400ms ease all;
+}
+.BronseBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.BronseBtn:hover:before,.BronseBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.valgtProdukt{
+
+}

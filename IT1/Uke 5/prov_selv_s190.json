@@ -1,0 +1,60 @@
+{
+  "1":{
+    "svar":"En primærnøkke er ID for et objekt, det kan bli satt opp i en tabell"
+  },
+  "2":{
+    "oppgave":"Hva tror du kan være primærnøkkel for..",
+    "a":{
+    "oppgave":"elever på en skole",
+    "svar":"Navn"
+    },
+    "b":{
+      "oppgave":"fritidsbåter",
+      "svar":"Båt Nummer"
+    },
+    "c":{
+      "oppgave":"planter",
+      "svar":"Sort"
+    },
+    "d":{
+      "oppgave":"kontaktene dine",
+      "svar":"Nummer"
+    },
+    "e":{
+      "oppgave":"stjerner på himmelen",
+      "svar":"Navn på stjernen"
+    }
+  },
+  "3":{
+    "svar":"Kandidatnøkkel er alle alternativene som kan brukes som primærnøkkel"
+  },
+  "4":{
+    "oppgave":"Hva er en fremmedsnøkkel",
+    "svar":"Det som kobler forskjellige deler av databasen sammen"
+  },
+  "5":{
+    "oppgave":"Hva er normalisering",
+    "svar":"Teknikker som blir brukt for å unngå dobbeltlagring og dublisering av data"
+  },
+  "5":{
+    "oppgave":"Lag et objekt med data om brukere av et dataspill. Bruk en fremmedsnøkkel sin viser meldinger fra en annen spiller",
+    "svar":{
+      "brukere":{
+        "user_1":{
+          "brukernavn":"AstroLord21",
+          "passord":"123456",
+          "highScore":9999
+      },
+      "jarle323":{
+        "passord":"heiii1212",
+        "highScore":8888
+      }
+    },
+    "meldinger":{
+      "001":{
+      "tekst":"Hei Jarle",
+      "brukernavn":"AstroLord21"
+      }
+    }
+  }
+}

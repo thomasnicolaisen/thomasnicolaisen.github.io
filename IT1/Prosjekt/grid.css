@@ -6,6 +6,7 @@ header {
   display: grid;
   width: 60%;
   margin: auto;
+  text-align: center;
 }
 
 main {
@@ -13,6 +14,7 @@ main {
   width: 60%;
   margin: auto;
   background-color: #eaeaea;
+  text-align: center;
 }
 
 footer{

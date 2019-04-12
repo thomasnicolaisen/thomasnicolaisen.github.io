@@ -1,0 +1,20 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  width: 90%;
+  margin-left: 70px;
+  margin-right: 70px;
+  background-color: rgb(21, 65, 106);
+  border-radius:
+}
+header{
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+button {
+  margin:auto;
+  background-color: rgb(21, 65, 106);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hovedside DATABASE</title>
+
+    <link rel="Kontaktliste" href="Kontaktliste.json">
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBY03fl1O3IZzVTX-WnTvnvl7wiMv674OM",
+      authDomain: "meinfyrstdatabase.firebaseapp.com",
+      databaseURL: "https://meinfyrstdatabase.firebaseio.com",
+      projectId: "meinfyrstdatabase",
+      storageBucket: "meinfyrstdatabase.appspot.com",
+      messagingSenderId: "989988730892"
+  };
+  firebase.initializeApp(config);
+    </script>
+
+  </head>
+
+  <body>
+
+    <p>OBS! Denne nettsiden inneholder JavaScript</p>
+
+    <script type="text/javascript">
+
+    //variabler som referer til firebase-databasen
+      const db = firebase.database();
+      const kontaktliste = db.ref("kontaktliste"); //denne referer til Kontaktliste i databasen
+
+      let kontakt = {
+        "firstName":"LeBron",
+        "lastName":"James"
+      }
+
+      kontaktliste.push(kontakt); //Push brukes til å sende ut informasjon itl databasen
+
+      const lesFraDb = (snapshot) => { //Funksjon som sender inn et bilde i databasen
+        let nyKontakt = snapshot.val();
+        document.body.innerHTML += `<p>Fornsavn: ${nyKontakt.firstName}. Etternavn: ${nyKontakt.lastName}</p>`; //HTML dokumentet sin body sendes inn i en ny kontakt
+      }
+
+      kontaktliste.on("child_added", lesFraDb); //Lager underelementer (child) til kontaktliste
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+header{
+
+}
+main{
+
+}
+
+footer{
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: yellow;
+}
+
+@media (max-width:1000px) {
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid>div>p{
+    font-size: 26px;
+    color: green;
+  }
+  body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc43I5nabuC8pIiexzvQJT1KaaIJVuMcwusPoSvfeh774x7Q4w);
+  }
+}
+
+@media (max-width:800px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid>div>p{
+    color: red;
+  }
+  body{
+    background-image: url(https://www.famousbirthdays.com/faces/blevins-tyler-image.jpg);
+  }
+}
+
+@media (max-width:600px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .grid>div>p{
+    color: blue;
+  }
+  body{
+    background-image: url(https://images.discordapp.net/avatars/480105002925555713/0072621f4ca791b05bf4003c47d6caf0.png?size=512);
+  }
+}
+
+.nav{
+  display: flex;
+}

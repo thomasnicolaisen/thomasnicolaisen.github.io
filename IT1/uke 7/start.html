@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nettbutikk</title>
+    <link rel="json" href="spørring.json">
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBZ1wsFqvWEQ26WcyK7A8aO71kImUMcsSM",
+    authDomain: "spoerringer-76ab3.firebaseapp.com",
+    databaseURL: "https://spoerringer-76ab3.firebaseio.com",
+    projectId: "spoerringer-76ab3",
+    storageBucket: "spoerringer-76ab3.appspot.com",
+    messagingSenderId: "452412822248"
+  };
+  firebase.initializeApp(config);
+</script>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      const db = firebase.database();
+      const sko = db.ref("varer/sko");
+      const jakker = db.ref("varer/jakker");
+
+      function visVare(snapshot){
+        console.log(snapshot.val());
+      }
+
+      //sko.on("child_added", visVare);
+
+      sko
+        .orderByChild("pris") //sorteringsfunksjon som sorterer på pris
+        .limitToFirst(2) //sorterer etter pris (Lavest til Høyest Pris)
+        .on("child_added",visVare); //spørrefunksjonen lytter etter nye oppføringner og kjører funksjonen visVare på hver oppføring
+    </script>
+
+  </body>
+</html>

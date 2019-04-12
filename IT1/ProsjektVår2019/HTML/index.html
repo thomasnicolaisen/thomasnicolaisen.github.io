@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sportshop.no</title>
+
+      <link rel="stylesheet" href="../CSS/knapper.css">
+      <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+      <link rel="icon" href="../Bilder/LOGO.png" type="image/x-icon" /></link>
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAy82LiYfYpN2Ata3eheo_riY-tX5vqI9s",
+          authDomain: "prosjektvaar.firebaseapp.com",
+          databaseURL: "https://prosjektvaar.firebaseio.com",
+          projectId: "prosjektvaar",
+          storageBucket: "prosjektvaar.appspot.com",
+          messagingSenderId: "162414983908"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" style="margin: auto;">
+        <div class="Logo"></div>
+      </a>
+      <button onclick="visSkoKnapper()" class="navBtn">Fotball sko <i class="down-arrow"></i></button>
+      <button onclick="visDrakterKnapper()" class="navBtn">Drakter</button>
+      <button onclick="visFotBallerKnapper()" class="navBtn"> Fotballer </button>
+      <a href="profil.html" class="navBtn">Profil</a>
+      <div type="hidden"></div>
+      <div class="navSearch">
+        <input type="text" name="" value="" class="searchInputfield" />
+        <button type="submit" name="button" class="searchBtn">
+          <div class="searchBtnLogo"></div>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div id="sideBar">
+
+      </div>
+      <div id="produkter">
+
+      </div>
+    </main>
+
+    <footer>
+      <p>Liker det du ser?</p>
+      <p>Følg oss på instagram @SportshopFC</p>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/produkt.js"></script>
+
+  </body>
+</html>
