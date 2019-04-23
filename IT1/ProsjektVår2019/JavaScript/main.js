@@ -35,6 +35,18 @@ function genererHTML(snapshot){
   `;
 }
 
+function genererHTMLHøy(snapshot){
+  let key = snapshot.key;
+  let produktSnap = snapshot.val();
+  main.innerHTML = `
+    <a href="produkt.html?id=${key}" class="produktBox">
+      <h1>${produktSnap.Navn}</h1>
+      <img src="${produktSnap.ImageURL}" width="100%"/>
+      <div class="produktPris">${produktSnap.Pris} NOK</div>
+    </a>
+  ` + main.innerHTML;
+}
+
 const visSkoKnapper = () => {
   sideBar.innerHTML = ``;
   main.innerHTML = ``;
@@ -76,8 +88,8 @@ const visDrakterKnapper = () => {
     <button class="SideBarBtn" onclick="visAdidasDrakt()">Adidas Drakter</button>
     <button class="SideBarBtn" onclick="visPumaDrakt()">Puma Drakter</button>
     <h3>Pris</h3>
-    <button class="SideBarBtn" onclick="visSkoPris()">Lav-Høy</button>
-    <button class="SideBarBtn" onclick="visSkoPris2()">Høy-Lav</button>
+    <button class="SideBarBtn" onclick="visDraktPris()">Lav-Høy</button>
+    <button class="SideBarBtn" onclick="visDraktPris2()">Høy-Lav</button>
     <h3>Land</h3>
     <button class="SideBarBtn" onclick="visEngDrakter()">England</button>
     <button class="SideBarBtn" onclick="visItaDrakter()">Italia</button>
@@ -85,19 +97,10 @@ const visDrakterKnapper = () => {
     <button class="SideBarBtn" onclick="visFraDrakter()">Frankrike</button>
     <button class="SideBarBtn" onclick="visTysDrakter()">Tyskland</button>
 
-    <h3>Farger</h3>
-    <section id="farger">
-    <button class="BlåBtn" class="SideBarBtn" class="fargeKnapp" onclick="visSkoBlå()">Blå</button>
-    <button class="RødBtn" class="SideBarBtn" class="fargeKnapp" onclick="visSkoRød()">Rød</button>
-    <button class="HvitBtn" class="SideBarBtn" class="fargeKnapp" onclick="visSkoHvit()">Hvit</button>
-    <button class="SvartBtn" class="SideBarBtn" class="fargeKnapp" onclick="visSkoSvart()">Svart</button>
-    <button class="SideBarBtn" class="fargeKnapp" onclick="visSkoGrønn()">Grønn</button>
-    <button class="GulBtn" class="SideBarBtn" class="fargeKnapp" onclick="visSkoGul()">Gul</button>
-    <button class="GråBtn" class="SideBarBtn" class="fargeKnapp" onclick="visSkoGrå()">Grå</button>
-    <button class="BronseBtn" class="SideBarBtn" class="fargeKnapp" onclick="visSkoBronse()">Bronse</button>
-    </section>
   `;
-  visDrakter();
+}
+  
+  visDrakter();{
 }
 
 const visFotBallerKnapper = () => {
@@ -107,6 +110,8 @@ const visFotBallerKnapper = () => {
     <h3>Merke</h3>
     <button class="SideBarBtn" onclick="visNikeBaller()">Nike Baller</button>
     <button class="SideBarBtn" onclick="visAdidasBaller()">Adidas Baller</button>
+  `;
+}
 
 function visAlleProdukter(){
   main.innerHTML = ``;
@@ -137,9 +142,28 @@ function visSkoPris(){
 
 function visSkoPris2(){
   main.innerHTML =``;
-  nikeSko.orderByChild("Pris").limitToFirst(10).on("child_added", genererHTML);
-  adidasSko.orderByChild("Pris").limitToFirst(10).on("child_added", genererHTML);
-  pumaSko.orderByChild("Pris").limitToFirst(10).on("child_added", genererHTML);
+  nikeSko.orderByChild("Pris").on("child_added", genererHTMLHøy);
+  adidasSko.orderByChild("Pris").on("child_added", genererHTMLHøy);
+  pumaSko.orderByChild("Pris").on("child_added", genererHTMLHøy);
+}
+
+function visDraktPris2(){
+  main.innerHTML =``;
+  drakter.orderByChild("Pris").limitToLast(10).on("child_added", genererHTML);
+  engDrakter.orderByChild("Pris").limitToLast(10).on("child_added", genererHTML);
+  itaDrakter.orderByChild("Pris").limitToLast(10).on("child_added", genererHTML);
+  fraDrakter.orderByChild("Pris").limitToLast(10).on("child_added", genererHTML);
+  tysDrakter.orderByChild("Pris").limitToLast(10).on("child_added", genererHTML);
+  spaDrakter.orderByChild("Pris").limitToLast(10).on("child_added", genererHTML);
+}
+
+function visDraktPris2(){
+  main.innerHTML =``;
+  engDrakter.orderByChild("Pris").on("child_added", genererHTMLHøy);
+  itaDrakter.orderByChild("Pris").on("child_added", genererHTMLHøy);
+  fraDrakter.orderByChild("Pris").on("child_added", genererHTMLHøy);
+  tysDrakter.orderByChild("Pris").on("child_added", genererHTMLHøy);
+  spaDrakter.orderByChild("Pris").on("child_added", genererHTMLHøy);
 }
 
 function visSkoBlå(){
@@ -280,6 +304,12 @@ function visPumaDrakt() {
   fraDrakter.orderByChild("Merke").equalTo("Puma").on("child_added", genererHTML);
   tysDrakter.orderByChild("Merke").equalTo("Puma").on("child_added", genererHTML);
   spaDrakter.orderByChild("Merke").equalTo("Puma").on("child_added", genererHTML);
+}
+
+function visAlleBaller() {
+  main.innerHTML = ``;
+  nikeBaller.on("child_added", genererHTML);
+  adidasBaller.on("child_added", genererHTML);
 }
 
 function visNikeBaller() {
